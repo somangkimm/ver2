@@ -139,9 +139,9 @@ html = r'''<!DOCTYPE html>
 <section id="programs" class="page">
   <div class="section-head"><div><div class="eyebrow">인지프로그램</div><h2>분야별 프로그램</h2><p>관심 분야를 선택해 프로그램을 살펴보세요.</p></div></div>
   <div class="program-grid">
-    <div class="card program"><div><div class="program-top"><div class="icon">📚</div><span class="level">인문학</span></div><h3>이야기로 만나는 세계사</h3><p>역사 속 인물과 사건을 통해 기억하고 생각하는 힘을 기르는 프로그램입니다.</p><div class="match">👩‍🏫 추천 전문가 · 역사·인문학 강사</div></div><button onclick="alert('프로그램 상세 페이지를 준비 중입니다.')">프로그램 보기</button></div>
+    <div class="card program"><div><div class="program-top"><div class="icon">📚</div><span class="level">인문학</span></div><h3>인문학으로 만나는 '삶'</h3><p>문학작품을 통해 자신의 인생을 성찰하고, 생각하는 힘을 기르는 프로그램입니다.</p><div class="match">👩‍🏫 추천 전문가 · 역사·인문학 강사</div></div><button onclick="alert('프로그램 상세 페이지를 준비 중입니다.')">프로그램 보기</button></div>
     <div class="card program"><div><div class="program-top"><div class="icon">💰</div><span class="level">경제</span></div><h3>생활 속 경제 읽기</h3><p>뉴스와 일상 속 경제 현상을 이해하며 사고력과 판단력을 자극합니다.</p><div class="match">👨‍🏫 추천 전문가 · 경제교육 전문가</div></div><button onclick="alert('프로그램 상세 페이지를 준비 중입니다.')">프로그램 보기</button></div>
-    <div class="card program"><div><div class="program-top"><div class="icon">🎨</div><span class="level">예술</span></div><h3>그림으로 기억하기</h3><p>작품 감상과 표현 활동을 결합해 창의적 사고와 기억 활동을 돕습니다.</p><div class="match">👩‍🎨 추천 전문가 · 미술교육 전문가</div></div><button onclick="alert('프로그램 상세 페이지를 준비 중입니다.')">프로그램 보기</button></div>
+    <div class="card program"><div><div class="program-top"><div class="icon">🎨</div><span class="level">예술</span></div><h3>연극으로 만나는 '나'</h3><p>표현 활동과 재현활동을 결합해 창의적 사고와 기억 활동을 돕습니다.</p><div class="match">👩‍🎨 추천 전문가 · 미술교육 전문가</div></div><button onclick="alert('프로그램 상세 페이지를 준비 중입니다.')">프로그램 보기</button></div>
     <div class="card program"><div><div class="program-top"><div class="icon">🗺️</div><span class="level">공간정보</span></div><h3>지도로 보는 우리 동네</h3><p>지도와 공간 정보를 활용해 관찰하고 비교하며 공간적 사고를 연습합니다.</p><div class="match">🧭 추천 전문가 · 공간정보 교육 전문가</div></div><button onclick="alert('프로그램 상세 페이지를 준비 중입니다.')">프로그램 보기</button></div>
   </div>
   <div class="section">
@@ -180,7 +180,7 @@ html = r'''<!DOCTYPE html>
         <button class="cta secondary">분석 자세히 보기</button>
       </div>
       <div class="card" style="margin-top:18px">
-        <div class="profile"><div class="avatar">👩‍🏫</div><div><h3>나의 코디네이터</h3><p style="margin:0">김○○ 인지케어 코디네이터</p></div></div>
+        <div class="profile"><div class="avatar">👩‍🏫</div><div><h3>나의 코디네이터</h3><p style="margin:0">김소망 인지케어 코디네이터</p></div></div>
         <button class="cta">상담·진도 관리 요청</button>
       </div>
     </div>
@@ -188,7 +188,7 @@ html = r'''<!DOCTYPE html>
 </section>
 </main>
 
-<footer>알지 ALJI · 맞춤형 인지케어 통합 플랫폼 프로토타입</footer>
+<footer>알지 ALGE · 맞춤형 인지케어 통합 플랫폼 프로토타입</footer>
 
 <script>
 const questions=[
@@ -217,10 +217,10 @@ function showResult(){
  answers.forEach(a=>{if(counts[a]!==undefined)counts[a]++});
  let key=Object.keys(counts).sort((a,b)=>counts[b]-counts[a])[0];
  const data={
-  art:['예술·창의 활동형','표현하고 감상하는 활동을 통해 즐겁게 참여할 수 있는 프로그램을 추천합니다.',['그림으로 기억하기','예술 감상 대화']],
-  human:['인문·탐구 활동형','이야기와 지식을 연결하고 대화하는 프로그램을 추천합니다.',['이야기로 만나는 세계사','책과 함께 생각하기']],
-  eco:['경제·생활 판단형','생활 속 경제 현상을 이해하고 비교·판단하는 프로그램을 추천합니다.',['생활 속 경제 읽기','뉴스로 배우는 경제']],
-  space:['공간·시각 활동형','지도와 주변 환경을 관찰하며 사고하는 프로그램을 추천합니다.',['지도로 보는 우리 동네','나의 동네 공간 탐색']]
+  art:['예술·창의 활동형','표현하고 감상하는 활동을 통해 즐겁게 참여할 수 있는 프로그램을 추천합니다.',['연극표현 재현하기','나의 일상으로 연극만들기']],
+  human:['인문·탐구 활동형','이야기와 지식을 연결하고 대화하는 프로그램을 추천합니다.',['나만의 책 만들기','문학작품 보드게임']],
+  eco:['경제·생활 판단형','생활 속 경제 현상을 이해하고 비교·판단하는 프로그램을 추천합니다.',['생활 속 경제 읽기','기초 연산으로 수리능력 기르기']],
+  space:['공간·시각 활동형','지도와 주변 환경을 관찰하며 사고하는 프로그램을 추천합니다.',['지도로 보는 우리 동네','공간 인지 퍼즐']]
  };
  const d=data[key]||data.human;
  document.getElementById('resultTitle').textContent=d[0];
